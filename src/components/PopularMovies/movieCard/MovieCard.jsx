@@ -34,7 +34,7 @@ const MovieCard = ({movies}) => {
   const title = movies.original_title.length > 14 ? movies.original_title.slice(0,14)+".." : movies.original_title;
 
   return (
-    <Link to={`/Movie/${movies.id}`} target='_blank' className='w-48 bg-slate-950 p-3 m-2 rounded-lg hover:scale-105 duration-150 ease-in-out'>
+    <Link to={`/Movie/${movies.id}`} className='w-48 bg-slate-950 p-3 m-2 rounded-lg hover:scale-105 duration-150 ease-in-out'>
       <img className='rounded-lg mb-1 hover:scale-105 duration-150 ease-in-out' src={`${Image_Domain}${movies.poster_path}`} alt={title} />
       <h1 className='text-teal-50 font-bold text-lg mb-2'>
         {title}
